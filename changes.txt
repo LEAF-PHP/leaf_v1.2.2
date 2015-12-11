@@ -1,0 +1,3 @@
+Dec 11, 2015:
+Passing fields in REQUEST simplified:	
+	Fields passed in REQUEST can be fetched as associative array for easy access.
