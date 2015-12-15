@@ -74,7 +74,7 @@ if (API_KEY === 'yes') {
             'user3' => 'gg8971646uo561dfh546d78te564r',
             'user4' => 'uku55fh156456j3213gd1651af654'
         );
-        if (strcmp($authorizer[$key], $value) !== 0) {
+        if (isset($authorizer[$key]) && strcmp($authorizer[$key], $value) !== 0) {
             header('HTTP/1.1 401 Unauthorized.', TRUE, 401);
             echo 'You are not authorised to access this page.';
             exit(1); // EXIT_ERROR 
